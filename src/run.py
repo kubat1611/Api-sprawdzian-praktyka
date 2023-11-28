@@ -1,5 +1,6 @@
 import unittest
 from src.tests.test_unit import TestAppUnit
+from src.tests.test_integration import TestAppIntegration
 
 
 def run_tests(test_class):
@@ -13,7 +14,7 @@ def run_tests(test_class):
 
 
 if __name__ == '__main__':
-    success = run_tests(TestAppUnit)
+    success = run_tests(TestAppUnit), run_tests(TestAppIntegration)
 
     if success:
         print("\n\033[92mAll tests passed.\033[0m")

@@ -91,6 +91,5 @@ class TestAppUnit(unittest.TestCase):
         self.assertEqual(data, {'error': 'User not found'})
 
 
-
 if __name__ == '__main__':
     unittest.main()
