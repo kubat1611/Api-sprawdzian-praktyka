@@ -16,7 +16,6 @@ if __name__ == '__main__':
     success = run_tests(TestAppUnit)
 
     if success:
-        print("\n\033[92mAll tests passed.\033[0m")  # Green color for success
+        print("\n\033[92mAll tests passed.\033[0m")
     else:
-        print("\n\033[91mSome tests failed.\033[0m")  # Red color for failure
-
+        print("\n\033[91mSome tests failed.\033[0m")
