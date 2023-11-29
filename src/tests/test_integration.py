@@ -1,5 +1,4 @@
 import unittest
-import json
 from src.api.main import app, users
 
 
