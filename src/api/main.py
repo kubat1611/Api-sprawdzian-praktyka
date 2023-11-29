@@ -65,7 +65,7 @@ def update_user(user_id):
     if 'lastname' in data:
         user['lastname'] = data['lastname']
 
-    return '', 204
+    return jsonify({}), 204
 
 
 @app.route('/users/<int:user_id>', methods=['PUT'])
@@ -87,7 +87,7 @@ def create_or_update_user(user_id):
         }
         users.append(new_user)
 
-    return '', 204
+    return jsonify({}), 204
 
 
 @app.route('/users/<int:user_id>', methods=['DELETE'])
@@ -95,7 +95,7 @@ def delete_user(user_id):
     user = get_user_by_id(user_id)
     if user:
         users.remove(user)
-        return '', 204
+        return jsonify({}), 204
     else:
         return jsonify({'error': 'User not found'}), 404
 
